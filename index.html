@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex justify-start items-center background">
+        <div class="flex justify-center items-center">
+          <div class="rectangular"></div>
+          <div class="triangle-right"></div>
+        </div>
+      </div>
+
+      <div class="sub-header flex justify-start items-center">
+        <div class="sub-h-1 flex justify-center items-center">
+          <div class="rectangular flex justify-between items-center">
+            <div class="flex justify-center items-center">
+              <div class="qrcode flex justify-center items-center">
+                <img src="assets/icons/qrcode.svg" alt="qrcode" />
+              </div>
+
+              <button class="localization flex justify-center items-center">
+                <img src="assets/icons/world-svgrepo-com.svg" alt="local" />
+                <span class="font20">En</span>
+              </button>
+            </div>
+
+            <div class="flex flex-col title">
+              <h1 class="text-center">نظام ادارة المهام</h1>
+              <h1 class="text-center">Task Management System</h1>
+            </div>
+          </div>
+          <div class="triangle-right"></div>
+        </div>
+
+        <div class="sub-h-2 flex justify-center items-center">
+          <div class="triangle-right"></div>
+          <div class="rectangular flex justify-end items-center">
+            <a
+              href="https://www.linkedin.com/in/mohamed-eldeeb-94a3b11a4/"
+              target="_blank"
+              class="staff-management flex justify-center items-center"
+            >
+              <h2 class="text-center">ادارة الموظفين</h2>
+              <img src="assets/icons/linkedin.svg" alt="staff Management" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="to-do-container">
+        <div class="list-search">
+          <div
+            class="search-container flex flex-row justify-between items-center"
+          >
+            <input placeholder="search.." class="flex-1" type="text" />
+            <img src="assets/icons/search-icon.svg" alt="search" />
+          </div>
+
+          <div class="list flex flex-col justify-between items-stretch">
+            <div class="flex flex-col justify-start items-stretch">
+              <div class="date flex justify-between items-center">
+                <div class="month-year flex justify-center items-center">
+                  <span class="day">12</span>
+
+                  <div class="flex flex-col justify-center items-center">
+                    <span class="month">JAN</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+
+                <div class="day-text flex justify-center items-center">
+                  TUSEDAY
+                </div>
+              </div>
+
+              <div
+                class="todo-items flex flex-col justify-start items-stretch"
+                style="gap: 5px"
+              >
+                <form class="flex justify-between items-center">
+                  <h3>This is todo item 1</h3>
+                  <div class="actions flex justify-center items-center">
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/edit-pencil-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/delete-trash-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+                  </div>
+                </form>
+
+                <form class="flex justify-between items-center">
+                  <h3>This is todo item 2</h3>
+                  <div class="actions flex justify-center items-center">
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/edit-pencil-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/delete-trash-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+                  </div>
+                </form>
+
+                <form class="flex justify-between items-center">
+                  <h3>This is todo item 3</h3>
+                  <div class="actions flex justify-center items-center">
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/edit-pencil-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/delete-trash-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+                  </div>
+                </form>
+
+                <form class="flex justify-between items-center">
+                  <input
+                    #nameInput
+                    autofocus="true"
+                    placeholder="Name"
+                    value="This is todo item 4"
+                  />
+                  <div class="actions flex justify-center items-center">
+                    <button
+                      type="submit"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/correct-success-tick-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center items-center"
+                    >
+                      <img
+                        src="assets/icons/cancel-error-svgrepo-com.svg"
+                        alt="Edit"
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="add-btn flex justify-center items-center">
+              <button class="flex justify-center items-center">
+                <img src="assets/icons/add-svgrepo.svg" alt="add-todo" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
